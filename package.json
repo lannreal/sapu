@@ -1,0 +1,14 @@
+{
+    "name": "goodtime",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "chmod +x lann-welcome.sh && echo 'bash /app/lann-welcome.sh' >> ~/.bashrc",
+        "start": "node index.js"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=20"
+    }
+}
