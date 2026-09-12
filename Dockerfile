@@ -1,3 +1,6 @@
+cd /path/ke/project/lo
+rm -f Dockerfile
+cat > Dockerfile << 'EOF'
 FROM node:20-slim
 
 WORKDIR /app
@@ -11,3 +14,4 @@ RUN chmod +x /root/lann-welcome.sh && \
     echo "bash /root/lann-welcome.sh" >> /root/.bashrc
 
 CMD ["npm", "start"]
+EOF
